@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Hello App Engine</title>
+         <style>
+body {background-color: Grey;}
+h1   {color: blue;}
+p    {color: red;}
+
+table{table-layout:fixed;}
+td{width:1px;white-space:nowrap;}
+</style>
+  </head>
+
+  <body>
+  <h1>Add New candidate</h1>  
+  
+  <form  action="SaveCandidate" method="Post" >  
+<table>  
+<tr><td>SUKUNIMI:</td><td><input type="text" name="sukunimi"/></td></tr>  
+<tr><td>ETUNIMI:</td><td><input type="text" name="etunimi"/></td></tr>  
+<tr><td>PUOLUE:</td><td><input type="text" name="puolue"/></td></tr>  
+<tr><td>KOTIPAIKKAKUNTA:</td><td>  
+<select name="KOTIPAIKKAKUNTA" style="width:150px">  
+<option>TAMPERE</option>  
+<option>HELSINKI</option>  
+<option>TURKU</option>  
+<option>OtHER</option>  
+</select>
+ <tr><td>IKA:</td><td><input type="number" name="ika"/></td></tr>  
+ <tr><td>MIKSI_EDUSKUNTAAN:</td><td><input type="text" name="miksi_eduskuntaan"/></td></tr>
+ <tr><td>MITA_ASIOITA_HALUAT_EDISTAA:</td><td><input type="text" name="Mita_haluat_edistaa"/></td></tr>
+ <tr><td>AMMATTI:</td><td><input type="text" name="Ammatti"/></td></tr>
+  
+<tr><td colspan="2"><a href="SaveCandidate"><input type="submit" value="Save Candidate"></a>
+</td></tr>  
+</table>  
+</form>  
+  
+<br/>  
+<a href="ViewCandidate">view candidate</a>  
+  </body>
+</html>
